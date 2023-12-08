@@ -57,46 +57,91 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    
         <h1>Welcome to Our  Website</h1>
-        <div class="product-card">
-            <img src="download.webp" alt="basketball ball" class="basketball">
-            <div class="product-details">
-                <div class="product-name">Indoor silent basketball ball</div>
-                <div class="product-price">9.99$</div>
-                <div class="product-description">24cm Size 7 Silent Basketball Bouncing High Mute Ball Basketball Sports Game Kids Birthday Christmas Gift
-
+       
+            
+                
+                    <div class="container">
+                        <div class="product-card">
+                            <body>
+                                <style>
+                                    #img{
+                                     width: 300px;
+                                     height: 300px;
+                                    }
+                                    .small-img{
+                                     width: 50px;
+                                     height: 50px;
+                                     cursor: pointer;
+                                    }
+                                    </style>
+                                    </head>
+                                    <body>
+                                    
+                                    <div id="img-container">
+                                     <img id="img" src="download.jpg" alt="ball" height="100" width="100">
+                                    </div>
+                                    
+                                    <div class="small-img-container">
+                                     <img class="small-img" src="https://ae04.alicdn.com/kf/Sb7597bc544514b87a761899d5460b36am.jpg_640x640.jpg" alt="">
+                                     <img class="small-img" src="https://ae04.alicdn.com/kf/S6188fb15a66a4b4b8190cf835b12afa3k.jpg_640x640.jpg" alt="">
+                                     <img class="small-img" src="https://ae04.alicdn.com/kf/S8a6579c6e4e648e58397f704f51128e7Z.jpg_640x640.jpg" alt="">
+                                     <img class="small-img" src="download.jpg" alt="">
+                                    </div>
+                                    
+                                    <script>
+                                     let mainImage = document.getElementById('img');
+                                     let smallImages = document.getElementsByClassName('small-img');
+                                    
+                                     for(let i=0; i<smallImages.length; i++){
+                                        smallImages[i].addEventListener('mouseover', function(){
+                                          mainImage.src = this.src;
+                                        });
+                                     }
+                                    </script>
+                            
+                            <div class="product-details">
+                                <div class="product-name">Silent basketball ball</div>
+                                <div class="product-price">9.99$</div>
+                                <div class="product-description">Bouncing Mute Ball Toy Indoor Silent Basketball Baby Foam Toy Silent Playground Bounce Basketball Child Sports Games Gift</div>
+                
+                                
+                                
+                                <style>
+                                    .buy-now-button {
+                                       display: inline-block;
+                                       font-size: 14px;
+                                       line-height: 1.43;
+                                       color: #fff;
+                                       background-color: #337ab7;
+                                       border-color: #2e6da4;
+                                       padding: 6px 12px;
+                                       margin-bottom: 0;
+                                       font-weight: normal;
+                                       text-align: center;
+                                       vertical-align: middle;
+                                       cursor: pointer;
+                                       border: 1px solid transparent;
+                                       border-radius: 4px;
+                                       text-decoration: none;
+                                    }
+                                    .buy-now-button:hover {
+                                       background-color: #286090;
+                                       border-color: #204d74;
+                                    }
+                                   </style>
+                                   
+                                   
+                                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
                 </div>
                 
-                <style>
-                    .buy-now-button {
-                       display: inline-block;
-                       font-size: 14px;
-                       line-height: 1.43;
-                       color: #fff;
-                       background-color: #337ab7;
-                       border-color: #2e6da4;
-                       padding: 6px 12px;
-                       margin-bottom: 0;
-                       font-weight: normal;
-                       text-align: center;
-                       vertical-align: middle;
-                       cursor: pointer;
-                       border: 1px solid transparent;
-                       border-radius: 4px;
-                       text-decoration: none;
-                    }
-                    .buy-now-button:hover {
-                       background-color: #286090;
-                       border-color: #204d74;
-                    }
-                   </style>
                    
-                   
-                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="product-card">
             <img src="sid.jpg" alt="glasses" class="glasses">
