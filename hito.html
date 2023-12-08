@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#img{
+ width: 300px;
+ height: 300px;
+}
+.small-img{
+ width: 50px;
+ height: 50px;
+ cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div id="img-container">
+ <img id="img" src="download.jpg" alt="">
+</div>
+
+<div class="small-img-container">
+ <img class="small-img" src="sid.jpg" alt="">
+ <img class="small-img" src="smart.webp" alt="">
+ <img class="small-img" src="shopjpg.jpg" alt="">
+ <img class="small-img" src="boat1.webp" alt="">
+</div>
+
+<script>
+ let mainImage = document.getElementById('img');
+ let smallImages = document.getElementsByClassName('small-img');
+
+ for(let i=0; i<smallImages.length; i++){
+    smallImages[i].addEventListener('mouseover', function(){
+      mainImage.src = this.src;
+    });
+ }
+</script>
+
+</body>
+</html>
