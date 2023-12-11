@@ -1,559 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glox</title>
-    <link rel="icon" href="logo.jpg"width="400"height="400">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .product-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .product-image {
-            width: 30%;
-            height: auto;
-        }
-        .product-details {
-            width: 70%;
-        }
-        .product-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .product-price {
-            font-size: 20px;
-            font-weight: bold;
-            color: #f60;
-            margin-bottom: 10px;
-        }
-        .product-description {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .add-to-cart {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+<title>Drop Shipping Store</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.product-box {
+    width: 200px;
+    height: 550px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.best-seller-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.buy-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<style>
+    #img{
+     width: 150px;
+     height: 150px;
+    }
+    .small-img{
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+    }
     </style>
 </head>
 <body>
+
+   
     
-        <h1>Welcome to Our  Website</h1>
-       
-            
-                
-                    <div class="container">
-                        <div class="product-card">
-                            <body>
-                                <style>
-                                    #img{
-                                     width: 150px;
-                                     height: 150px;
-                                    }
-                                    .small-img{
-                                     width: 50px;
-                                     height: 50px;
-                                     cursor: pointer;
-                                    }
-                                    </style>
-                                    </head>
-                                    <body>
-                                    
-                                    <div id="img-container">
-                                     <img id="img" src="download.jpg" alt="ball" height="100" width="100">
-                                    </div>
-                                    
-                                    <div class="small-img-container">
-                                     <img class="small-img" src="https://ae04.alicdn.com/kf/Sb7597bc544514b87a761899d5460b36am.jpg_640x640.jpg" alt="">
-                                     <img class="small-img" src="https://ae04.alicdn.com/kf/S6188fb15a66a4b4b8190cf835b12afa3k.jpg_640x640.jpg" alt="">
-                                     <img class="small-img" src="https://ae04.alicdn.com/kf/S8a6579c6e4e648e58397f704f51128e7Z.jpg_640x640.jpg" alt="">
-                                     <img class="small-img" src="download.jpg" alt="">
-                                    </div>
-                                    
-                                    <script>
-                                     let mainImage = document.getElementById('img');
-                                     let smallImages = document.getElementsByClassName('small-img');
-                                    
-                                     for(let i=0; i<smallImages.length; i++){
-                                        smallImages[i].addEventListener('mouseover', function(){
-                                          mainImage.src = this.src;
-                                        });
-                                     }
-                                    </script>
-                            
-                            <div class="product-details">
-                                <div class="product-name">Silent basketball ball</div>
-                                <div class="product-price">9.99$</div>
-                                <div class="product-description">Bouncing Mute Ball Toy Indoor Silent Basketball Baby Foam Toy Silent Playground Bounce Basketball Child Sports Games Gift</div>
-                
-                                
-                                
-                                <style>
-                                    .buy-now-button {
-                                       display: inline-block;
-                                       font-size: 14px;
-                                       line-height: 1.43;
-                                       color: #fff;
-                                       background-color: #337ab7;
-                                       border-color: #2e6da4;
-                                       padding: 6px 12px;
-                                       margin-bottom: 0;
-                                       font-weight: normal;
-                                       text-align: center;
-                                       vertical-align: middle;
-                                       cursor: pointer;
-                                       border: 1px solid transparent;
-                                       border-radius: 4px;
-                                       text-decoration: none;
-                                    }
-                                    .buy-now-button:hover {
-                                       background-color: #286090;
-                                       border-color: #204d74;
-                                    }
-                                   </style>
-                                   
-                                   
-                                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                
-                   
-    <div class="container">
-        <div class="product-card">
-            <img src="sid.jpg" alt="glasses" class="glasses">
-            <div class="product-details">
-                <div class="product-name">Cyberpunk glasses</div>
-                <div class="product-price">9.00$</div>
-                <div class="product-description">Cool Luminous Colorful LED Light Up Glasses Glowing Neon Light Flashing Party Glasses For Nightclub DJ Dance Party Decor</div>
-
-                
-                
-                <style>
-                    .buy-now-button {
-                       display: inline-block;
-                       font-size: 14px;
-                       line-height: 1.43;
-                       color: #fff;
-                       background-color: #337ab7;
-                       border-color: #2e6da4;
-                       padding: 6px 12px;
-                       margin-bottom: 0;
-                       font-weight: normal;
-                       text-align: center;
-                       vertical-align: middle;
-                       cursor: pointer;
-                       border: 1px solid transparent;
-                       border-radius: 4px;
-                       text-decoration: none;
-                    }
-                    .buy-now-button:hover {
-                       background-color: #286090;
-                       border-color: #204d74;
-                    }
-                   </style>
-                   
-                   
-                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="container">
-<div class="product-card">
-    <img src="smart.webp" alt="watch" class="glasses" width="150" height="150">
-    <div class="product-details">
-        <div class="product-name">Smart watch</div>
-        <div class="product-price">19.99$</div>
-        <div class="product-description">2023 Watch 9 Smart Watch Men Body Temperature BT Call NFC Always on Display Fitness Women Series 8 Smartwatch for Apple Android</div>
-
-        
-        <style>
-            .buy-now-button {
-               display: inline-block;
-               font-size: 14px;
-               line-height: 1.43;
-               color: #fff;
-               background-color: #337ab7;
-               border-color: #2e6da4;
-               padding: 6px 12px;
-               margin-bottom: 0;
-               font-weight: normal;
-               text-align: center;
-               vertical-align: middle;
-               cursor: pointer;
-               border: 1px solid transparent;
-               border-radius: 4px;
-               text-decoration: none;
-            }
-            .buy-now-button:hover {
-               background-color: #286090;
-               border-color: #204d74;
-            }
-           </style>
-           
-           
-           <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="product-card">
-    <img src="mask(1).webp" alt="mask" class="glasses">
-    <div class="product-details">
-        <div class="product-name">Led mask</div>
-        <div class="product-price">5.00$</div>
-        <div class="product-description">Glowing Cosplay EL Wire neon Mask Scary Skull Masquerade Luminous Carnival Festive Party Supplies LED Purge Mask For Halloween</div>
-        <a href="facemask.html" ><h4>More of this item</h4></a>
-        <style>
-            .buy-now-button {
-               display: inline-block;
-               font-size: 14px;
-               line-height: 1.43;
-               color: #fff;
-               background-color: #337ab7;
-               border-color: #2e6da4;
-               padding: 6px 12px;
-               margin-bottom: 0;
-               font-weight: normal;
-               text-align: center;
-               vertical-align: middle;
-               cursor: pointer;
-               border: 1px solid transparent;
-               border-radius: 4px;
-               text-decoration: none;
-            }
-            .buy-now-button:hover {
-               background-color: #286090;
-               border-color: #204d74;
-            }
-           </style>
-           
-           
-           <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container">
-    <div class="product-card">
-        <img src="https://ae04.alicdn.com/kf/S3fbce5c767c846aa8a5b15f43a1cb756O.jpg" alt="boat" class="glasses" width="150" height="150">
-        <div class="product-details">
-            <div class="product-name">Winter gloves</div>
-            <div class="product-price">4.99$</div>
-            <div class="product-description">Winter Gloves for Men Women Touchscreen Anti-Slip Thermal Warm Windproof Glove for Running Cycling Motorcycle Hiking Ski Driving</div>
     
-            
-            <style>
-                .buy-now-button {
-                   display: inline-block;
-                   font-size: 14px;
-                   line-height: 1.43;
-                   color: #fff;
-                   background-color: #337ab7;
-                   border-color: #2e6da4;
-                   padding: 6px 12px;
-                   margin-bottom: 0;
-                   font-weight: normal;
-                   text-align: center;
-                   vertical-align: middle;
-                   cursor: pointer;
-                   border: 1px solid transparent;
-                   border-radius: 4px;
-                   text-decoration: none;
-                }
-                .buy-now-button:hover {
-                   background-color: #286090;
-                   border-color: #204d74;
-                }
-               </style>
-               
-               
-               <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
+    
     <div class="container">
-        <div class="product-card">
-            <img src="https://ae04.alicdn.com/kf/Sd565e7cce016401e83f57d47b019e52dr.jpg_640x640.jpg" alt="boat" class="glasses" width="150" height="150">
-            <div class="product-details">
-                <div class="product-name">Santa</div>
-                <div class="product-price">4.99$</div>
-                <div class="product-description">Santa Figurines 8 Inch Christmas Standing Santa h Doll Xmas Santa Statue For Christmas Window Moments Christmas Ornament</div>
+     <form action="/search">
+        <input type="text" placeholder="Search..." name="query">
+        <button type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+     </form>
+    </div>
+    
+    
+    
+    
+<div class="product-section">
+    <div class="product-box">
+        <div id="img-container">
+            <img id="img" src="download.jpg" alt="ball" height="100" width="100">
+           </div>
+           
+           <div class="small-img-container">
+            <img class="small-img" src="https://ae04.alicdn.com/kf/Sb7597bc544514b87a761899d5460b36am.jpg_640x640.jpg" alt="" width="50" height="100">
+            <img class="small-img" src="https://ae04.alicdn.com/kf/S6188fb15a66a4b4b8190cf835b12afa3k.jpg_640x640.jpg" alt=""width="50" height="100">
+            <img class="small-img" src="https://ae04.alicdn.com/kf/S8a6579c6e4e648e58397f704f51128e7Z.jpg_640x640.jpg" alt=""width="50" height="100">
+            <img class="small-img" src="download.jpg" alt=""width="50" height="100">
+           </div>
+           
+           <script>
+            let mainImage = document.getElementById('img');
+            let smallImages = document.getElementsByClassName('small-img');
+           
+            for(let i=0; i<smallImages.length; i++){
+               smallImages[i].addEventListener('mouseover', function(){
+                 mainImage.src = this.src;
+               });
+            }
+           </script>
         
-                
-                <style>
-                    .buy-now-button {
-                       display: inline-block;
-                       font-size: 14px;
-                       line-height: 1.43;
-                       color: #fff;
-                       background-color: #337ab7;
-                       border-color: #2e6da4;
-                       padding: 6px 12px;
-                       margin-bottom: 0;
-                       font-weight: normal;
-                       text-align: center;
-                       vertical-align: middle;
-                       cursor: pointer;
-                       border: 1px solid transparent;
-                       border-radius: 4px;
-                       text-decoration: none;
-                    }
-                    .buy-now-button:hover {
-                       background-color: #286090;
-                       border-color: #204d74;
-                    }
-                   </style>
-                   
-                   
-                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="container">
-            <div class="product-card">
-                <img src="https://ae04.alicdn.com/kf/H721d79cfc470435db7ac305a23932c1bh.jpg" alt="boat" class="glasses" width="150" height="150">
-                <div class="product-details">
-                    <div class="product-name">Tree fence</div>
-                    <div class="product-price">6.99$</div>
-                    <div class="product-description">
-                        4.6x12 Inch Mini Plastic Fence Christmas Decorative 2024 Xmas Tree Decor Belt White Picket Fenceside Frame </div>
-            
-                    
-                    <style>
-                        .buy-now-button {
-                           display: inline-block;
-                           font-size: 14px;
-                           line-height: 1.43;
-                           color: #fff;
-                           background-color: #337ab7;
-                           border-color: #2e6da4;
-                           padding: 6px 12px;
-                           margin-bottom: 0;
-                           font-weight: normal;
-                           text-align: center;
-                           vertical-align: middle;
-                           cursor: pointer;
-                           border: 1px solid transparent;
-                           border-radius: 4px;
-                           text-decoration: none;
-                        }
-                        .buy-now-button:hover {
-                           background-color: #286090;
-                           border-color: #204d74;
-                        }
-                       </style>
-                       
-                       
-                       <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div class="container">
-                <div class="product-card">
-                    <img src="https://ae04.alicdn.com/kf/S4708a8564acf48149aaabc07ced03521f.jpg_640x640.jpg" alt="boat" class="glasses" width="150" height="150">
-                    <div class="product-details">
-                        <div class="product-name">Coat that heats up usb</div>
-                        <div class="product-price">19.99$</div>
-                        <div class="product-description">9 Heated Area Warming Jacket USB Charging Heated Zip Up Coat Warm Heating Jackets Coat 3 Gear Temperature for Outdoor Activities</div>
-                
-                        
-                        <style>
-                            .buy-now-button {
-                               display: inline-block;
-                               font-size: 14px;
-                               line-height: 1.43;
-                               color: #fff;
-                               background-color: #337ab7;
-                               border-color: #2e6da4;
-                               padding: 6px 12px;
-                               margin-bottom: 0;
-                               font-weight: normal;
-                               text-align: center;
-                               vertical-align: middle;
-                               cursor: pointer;
-                               border: 1px solid transparent;
-                               border-radius: 4px;
-                               text-decoration: none;
-                            }
-                            .buy-now-button:hover {
-                               background-color: #286090;
-                               border-color: #204d74;
-                            }
-                           </style>
-                           
-                           
-                           <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                    </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div class="container">
-                    <div class="product-card">
-                        <img src="https://ae04.alicdn.com/kf/HTB1qJUrSFXXXXcIXpXXq6xXFXXX1.jpg_640x640.jpg" alt="boat" class="glasses" width="150" height="150">
-                        <div class="product-details">
-                            <div class="product-name">christmass lights</div>
-                            <div class="product-price">7.00$</div>
-                            <div class="product-description">Outdoor christmas led string lights    2M decorative fairy light holiday lights lighting tree garland decor</div>
-                    
-                            
-                            <style>
-                                .buy-now-button {
-                                   display: inline-block;
-                                   font-size: 14px;
-                                   line-height: 1.43;
-                                   color: #fff;
-                                   background-color: #337ab7;
-                                   border-color: #2e6da4;
-                                   padding: 6px 12px;
-                                   margin-bottom: 0;
-                                   font-weight: normal;
-                                   text-align: center;
-                                   vertical-align: middle;
-                                   cursor: pointer;
-                                   border: 1px solid transparent;
-                                   border-radius: 4px;
-                                   text-decoration: none;
-                                }
-                                .buy-now-button:hover {
-                                   background-color: #286090;
-                                   border-color: #204d74;
-                                }
-                               </style>
-                               
-                               
-                               <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="container">
-                        <div class="product-card">
-                            <img src="https://ae04.alicdn.com/kf/S91d54f420abc4311a62dc4842eb938b5a.jpg" alt="boat" class="glasses" width="150" height="150">
-                            <div class="product-details">
-                                <div class="product-name">jellyfish Led lamp</div>
-                                <div class="product-price">19.99$</div>
-                                <div class="product-description">
-                                    Color Changing Jellyfish Lamp Usb/Battery Powered Table Night Light Children'S Gift Home Bedroom Decor Boys Girls Birthday Gifts</div>
-                        
-                                
-                                <style>
-                                    .buy-now-button {
-                                       display: inline-block;
-                                       font-size: 14px;
-                                       line-height: 1.43;
-                                       color: #fff;
-                                       background-color: #337ab7;
-                                       border-color: #2e6da4;
-                                       padding: 6px 12px;
-                                       margin-bottom: 0;
-                                       font-weight: normal;
-                                       text-align: center;
-                                       vertical-align: middle;
-                                       cursor: pointer;
-                                       border: 1px solid transparent;
-                                       border-radius: 4px;
-                                       text-decoration: none;
-                                    }
-                                    .buy-now-button:hover {
-                                       background-color: #286090;
-                                       border-color: #204d74;
-                                    }
-                                   </style>
-                                   
-                                   
-                                   <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="container">
-                            <div class="product-card">
-                                <img src="https://ae04.alicdn.com/kf/S838d840018f247ff9db11044c32813bbQ.jpg_640x640.jpg" alt="boat" class="glasses" width="150" height="150">
-                                <div class="product-details">
-                                    <div class="product-name">Planet 3D LED Ball</div>
-                                    <div class="product-price">17.99$</div>
-                                    <div class="product-description">
-                                        USB LED Night Light Galaxy Crystal Ball Table Lamp 3D Planet Moon Lamp Bedroom Home Decor for Kids Party Children Birthday Gifts</div>
-                                        <h4>We have moon and milky way and all planets in one ball Contact us for prices Facebook "Teivus FV"</h4>
-                            
-                                    
-                                    <style>
-                                        .buy-now-button {
-                                           display: inline-block;
-                                           font-size: 14px;
-                                           line-height: 1.43;
-                                           color: #fff;
-                                           background-color: #337ab7;
-                                           border-color: #2e6da4;
-                                           padding: 6px 12px;
-                                           margin-bottom: 0;
-                                           font-weight: normal;
-                                           text-align: center;
-                                           vertical-align: middle;
-                                           cursor: pointer;
-                                           border: 1px solid transparent;
-                                           border-radius: 4px;
-                                           text-decoration: none;
-                                        }
-                                        .buy-now-button:hover {
-                                           background-color: #286090;
-                                           border-color: #204d74;
-                                        }
-                                       </style>
-                                       
-                                       
-                                       <a href="Afterpage.html" class="buy-now-button">Buy Now</a>
-                                </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            
-                        
-                                                           
+        <h2>Silent basketball ball</h2>
+      
+        <p>Bouncing Mute Ball Toy Indoor Silent Basketball Baby Foam Toy Silent Playground Bounce Basketball Child Sports Games Gift . </p>
+        <p>Price:9.99$ </p>
+        <a href="#" class="buy-now-btn">buy Now</a>
+    </div>
+
+    <div class="product-box">
+        <h2>Product 2</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Price: $49.99</p>
+        <a href="#" class="buy-now-btn">buy Now</a>
+    </div>
+
+    <div class="product-box">
+        <h2>Product 3</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Price: $49.99</p>
+        <a href="#" class="buy-now-btn">buy Now</a>
+    </div>
+</div>
+
+<div class="best-seller-section">
+    <h2>Best Seller Products</h2>
+    <!-- Add more best seller products here -->
+</div>
 
 
 </body>
